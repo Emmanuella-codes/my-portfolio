@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ChakraProvider, Box, theme, Flex } from "@chakra-ui/react";
+import { ChakraProvider, Box, theme, Text, Flex } from "@chakra-ui/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import RouteCmp from "./routes";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
@@ -44,15 +44,14 @@ export const App = () => (
             <RouteCmp />
           </Router>
         </Flex>
-        <Box
-          display="flex"
-          position={{ md: "fixed" }}
-          bottom="0"
-          right="18%"
-          justifyContent="center"
-          m="30px auto 20px"
-        >
-          <Footer />
+        <Box m="auto">
+          <Box mb={{ base: "0", md: "3" }}>
+            <Footer />
+          </Box>
+
+          <Box mt="5" mb="3" display={{ base: "block", md: "none" }}>
+            <Text>Built with ❤️ by Emmanuella ✨</Text>
+          </Box>
         </Box>
       </Box>
     </Flex>

@@ -1,7 +1,8 @@
 import { Flex } from "@chakra-ui/react";
-import ProjectCmp from "../components/ProjectCmp";
+import Articles from "../components/Articles";
+import AboutMe from "../components/AboutMe";
 
-const Projects = () => {
+const index = () => {
   return (
     <>
       <Flex
@@ -11,10 +12,11 @@ const Projects = () => {
         m={{ md: "0 auto" }}
         mt={{ base: "30px" }}
       >
-        <ProjectCmp />
+        <AboutMe />
+        <Articles />
       </Flex>
     </>
   );
 };
 
-export default Projects;
+export default index;

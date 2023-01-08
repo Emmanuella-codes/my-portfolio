@@ -3,8 +3,6 @@ import { Box, Flex, Text, Image } from "@chakra-ui/react";
 import AvatarImg from "../assets/Avatar.svg";
 
 const PageLayout = () => {
-  // ];
-
   return (
     <>
       <Box
@@ -12,6 +10,8 @@ const PageLayout = () => {
         m={{ md: "0 auto" }}
         overflow={"hidden"}
         w="100%"
+        display="flex"
+        flexDir="column"
       >
         <SidebarContent />
       </Box>
@@ -49,6 +49,15 @@ const SidebarContent = () => {
           <Text color="#FFF">
             <a href="mailto:ellafchukwu@gmail.com">Email me</a>
           </Text>
+        </Box>
+        <Box
+          pos="absolute"
+          bottom="0"
+          mb="2"
+          display={{ base: "none", md: "block" }}
+          color="#1a202c"
+        >
+          <Text>Built with ❤️ by Emmanuella ✨</Text>
         </Box>
       </Flex>
     </Box>

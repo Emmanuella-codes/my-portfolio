@@ -18,10 +18,17 @@ const Navbar = () => {
         gap="10"
       >
         <Box>
-          <Link href="/">About me</Link>
+          <Link href="/" _hover={{ textDecor: "none", fontWeight: 600 }}>
+            About me
+          </Link>
         </Box>
         <Box>
-          <Link href="/projects">Projects</Link>
+          <Link
+            href="/projects"
+            _hover={{ textDecor: "none", fontWeight: 600 }}
+          >
+            Projects
+          </Link>
         </Box>
       </Flex>
     </Container>

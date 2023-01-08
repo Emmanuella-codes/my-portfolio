@@ -4,7 +4,7 @@ import { ROUTES } from "./links";
 import { Spinner } from "@chakra-ui/react";
 import React, { Suspense } from "react";
 
-const AboutMe = React.lazy(() => import("../pages/AboutMe"));
+const Home = React.lazy(() => import("../pages"));
 const Projects = React.lazy(() => import("../pages/Projects"));
 
 const RouteCmp = () => {
@@ -17,11 +17,12 @@ const RouteCmp = () => {
           emptyColor="gray.200"
           color="blue.500"
           size="xl"
+          m="auto"
         />
       }
     >
       <Routes>
-        <Route path={ROUTES.aboutMe} element={<AboutMe />} />
+        <Route path={ROUTES.home} element={<Home />} />
         <Route path={ROUTES.projects} element={<Projects />} />
       </Routes>
     </Suspense>

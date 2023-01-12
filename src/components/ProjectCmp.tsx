@@ -128,18 +128,48 @@ const ProjectCmp = () => {
             fontSize={{ base: "16px" }}
           >
             <Box display="flex" flexDir="row" gap={{ base: "4", md: "10" }}>
-              <Icon as={SiReact} w="38px" h="38px" />
-              <Icon as={RiVuejsFill} w="38px" h="38px" />
-              <Icon as={SiNextDotJs} w="38px" h="38px" />
-              <Icon as={SiNuxtDotJs} w="38px" h="38px" />
-              <Icon as={SiJavascript} w="38px" h="38px" />
+              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
+                <Icon as={SiReact} w="38px" h="38px" />
+                <Text>React</Text>
+              </Box>
+              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
+                <Icon as={RiVuejsFill} w="38px" h="38px" />
+                <Text>Vue</Text>
+              </Box>
+              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
+                <Icon as={SiNextDotJs} w="38px" h="38px" />
+                <Text>Next</Text>
+              </Box>
+              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
+                <Icon as={SiNuxtDotJs} w="38px" h="38px" />
+                <Text>Nuxt</Text>
+              </Box>
+              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
+                <Icon as={SiJavascript} w="38px" h="38px" />
+                <Text>JS</Text>
+              </Box>
             </Box>
             <Box display="flex" flexDir="row" gap={{ base: "4", md: "10" }}>
-              <Icon as={SiTypescript} w="38px" h="38px" />
-              <Icon as={SiTailwindcss} w="38px" h="38px" />
-              <Icon as={SiBootstrap} w="38px" h="38px" />
-              <Icon as={DiGit} w="38px" h="38px" />
-              <Icon as={RiGithubFill} w="38px" h="38px" />
+              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
+                <Icon as={SiTypescript} w="38px" h="38px" />
+                <Text>TS</Text>
+              </Box>
+              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
+                <Icon as={SiTailwindcss} w="38px" h="38px" />
+                <Text>Tailwind</Text>
+              </Box>
+              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
+                <Icon as={SiBootstrap} w="38px" h="38px" />
+                <Text>Bootstrap</Text>
+              </Box>
+              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
+                <Icon as={DiGit} w="38px" h="38px" />
+                <Text>Git</Text>
+              </Box>
+              <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
+                <Icon as={RiGithubFill} w="38px" h="38px" />
+                <Text>Github</Text>
+              </Box>
             </Box>
           </Box>
           <Box mt="9" mb="16">

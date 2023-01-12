@@ -23,7 +23,7 @@ export const App = () => (
         mb="22px"
       >
         <Navbar />
-        <ColorModeSwitcher pr="35px" />
+        <ColorModeSwitcher pr="35px" mt="2" />
       </Box>
       <Box display="flex">
         <PageLayout />

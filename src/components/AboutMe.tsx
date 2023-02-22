@@ -21,27 +21,57 @@ const AboutMe = () => {
           </Heading>
         </Flex>
         <Box w="83%" mt="20px">
-          <Text>I build applications that reside on the web.</Text>
-          <Text mt="5px">
-            I'm a Frontend Developer with a focus on creating amazing web
-            applications. I use front-end tools like the React library and the
-            Vue framework to quickly and easily create appealing website layouts
-            and applications.
+          <Text>
+            Hello! I'm a Frontend Developer and I love to build web
+            applications.
           </Text>
           <Text mt="5px">
-            I currently work as a Frontend Developer intern at{" "}
+            I make use of{" "}
             <span
-              style={{ padding: "1px 4px", borderBottom: "2px solid #7DC670" }}
+              style={{
+                borderBottom: "1px solid #60D6F6",
+                paddingInlineStart: "2px",
+                paddingInlineEnd: "2px",
+              }}
             >
-              <a href="https://app.unboxd.gifts">Unboxd</a>
+              React
             </span>{" "}
-            my current work focuses on creating accessible features and fixing
-            bugs.
+            and{" "}
+            <span
+              style={{
+                borderBottom: "1px solid #42D392",
+                paddingInlineStart: "2px",
+                paddingInlineEnd: "2px",
+              }}
+            >
+              Vue
+            </span>{" "}
+            to create websites that are not only visually appealing but also
+            engaging and interactive. I love learning, creating and pushing my
+            boundaries with new technologies. I also know my way around Git and
+            Github.
           </Text>
-          <Text mt="5px">
-            When I'm not learning or coding, you may find me visiting friends
-            and family, cooking, reading novels written in an African setting,
-            or writing short stories.
+          <Text mt={4}>
+            Like everyone who discovered a new skill in 2020, i decided to invest
+            more time into software development. I have basic knowledge of Node
+            and Express.
+          </Text>
+          <Text mt={4}>
+            When I'm not immersed in code, you can find me exploring new recipes
+            in the kitchen, getting lost in a good novel, jotting down my latest
+            creative ideas in a short story or playing video games.
+          </Text>
+          <Text mt={4}>
+            One of my favorite things about being a developer is the constant
+            learning and growth that comes with the job. There's always
+            something new to discover, whether it's a new library, a new
+            programming language, or a new way of thinking about
+            problem-solving.
+          </Text>
+          <Text mt={4}>
+            I'm excited about the possibilities that technology brings, and I'm
+            dedicated to using my skills as a developer to make a positive
+            impact in the world.
           </Text>
         </Box>
       </Flex>

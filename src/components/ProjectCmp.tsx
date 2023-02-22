@@ -11,9 +11,8 @@ const ProjectCmp = () => {
         /* justifyContent="center" */
         alignItems={{ base: "center" }}
         maxW={{ base: "80vw" }}
-        
       >
-        <Flex alignSelf="flex-start" mx={{ base: "3", md: "8" }}>
+        <Flex alignSelf="flex-start" ml={{ base: "3", lg: "9" }} maxW={{ md: "80%" }}>
           <Heading as="h2" size="xl">
             Projects
           </Heading>

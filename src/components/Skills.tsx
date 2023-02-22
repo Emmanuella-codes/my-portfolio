@@ -62,7 +62,7 @@ const skillsData = [
 const Skills = () => {
   return (
     <Flex flexDir={"column"}>
-      <Box mt="7" >
+      <Box mt="7">
         <Heading as="h2" size="xl">
           Skills
         </Heading>

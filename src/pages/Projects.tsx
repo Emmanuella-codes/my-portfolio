@@ -7,9 +7,9 @@ const Projects = () => {
       <Flex
         flexDir="column"
         alignItems="center"
-        maxW={{ md: "50vw" }}
-        m={{ md: "0 auto" }}
-        mt={{ base: "30px" }}
+        w={{ md: "50vw" }}
+        mx={{ base: "auto" }}
+        mt="6"
       >
         <ProjectCmp />
       </Flex>

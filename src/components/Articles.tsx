@@ -1,7 +1,13 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-// import React, { useEffect } from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Articles = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, offset: 200, easing: "ease-in-out" });
+  }, []);
+
   return (
     <>
       <Flex
@@ -13,24 +19,18 @@ const Articles = () => {
         fontSize="xl"
       >
         <Flex flexDir="column" mt="9" w="83%">
-          <Flex
-            flexDir="column"
-            alignSelf="flex-start" /* data-aos="slide-down" */
-          >
+          <Flex flexDir="column" alignSelf="flex-start">
             <Heading as="h2" size="xl">
               Articles
             </Heading>
           </Flex>
           <Flex flexDir="column">
             <Box
-              /* data-aos="slide-up" */
-              /* data-aos-anchor-placement="center" */
               border="1px solid"
               boxShadow="md"
               my="6"
               p="7"
               borderRadius="10px"
-              className="aos-init animate"
             >
               <Text>
                 <a href="https://emmanuella456.hashnode.dev/taking-risks-having-a-clear-roadmap-in-tech-dev-retro-2022">
@@ -44,14 +44,11 @@ const Articles = () => {
               </Text>
             </Box>
             <Box
-              /* data-aos="slide-up" */
-              /* data-aos-anchor-placement="top" */
               border="1px solid"
               boxShadow="md"
               my="6"
               p="7"
               borderRadius="10px"
-              className="aos-init animate"
             >
               <Text>
                 <a href="https://emmanuella456.hashnode.dev/dealing-with-imposter-syndrome">
@@ -65,14 +62,11 @@ const Articles = () => {
               </Text>
             </Box>
             <Box
-              /* data-aos="slide-up" */
-              data-aos-anchor-placement="top"
               border="1px solid"
               boxShadow="md"
               my="6"
               p="7"
               borderRadius="10px"
-              className="aos-init animate"
             >
               <Text>
                 <a href="https://emmanuella456.hashnode.dev/difference-between-tailwind-css-and-chakra-ui">

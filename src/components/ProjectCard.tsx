@@ -15,21 +15,11 @@ const projects: Project[] = [
   {
     title: "Breakfast Idea App",
     description:
-      "A breakfast idea app that can be used to search and generate recipes",
+      "A breakfast idea app that can be used to search recipes. Users can sign in to generate random recipes, save and delete them.",
     technologies: ["NEXTJS", "CHAKRA UI", "FIREBASE"],
     githubLink: "https://github.com/Emmanuella-codes/breakfast-idea-app",
     cardPicture: BreakfastPic,
   },
-  /* {
-    title: "Movie App",
-    description:
-      "A movie recommendation built with Nuxtjs and SCSS. It displays latest movies, the details and casts.",
-    technologies: ["NUXTJS", "SCSS"],
-    githubLink:
-      "https://github.com/Emmanuella-codes/movie-recommendation-website",
-      websiteScreenshot: "",
-      mobileScreenshot: "",
-  }, */
   {
     title: "Manage Landing Page",
     description:

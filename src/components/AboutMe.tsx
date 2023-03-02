@@ -1,6 +1,11 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Collapse, Flex, Heading, Text } from "@chakra-ui/react";
+import { useState } from "react";
 
 const AboutMe = () => {
+  const [loadMore, setLoadMore] = useState(false);
+
+  const handleLoadMore = () => setLoadMore(!loadMore);
+
   return (
     <>
       <Flex
@@ -52,27 +57,44 @@ const AboutMe = () => {
             Github.
           </Text>
           <Text mt={4}>
-            Like everyone who discovered a new skill in 2020, i decided to invest
-            more time into software development. I have basic knowledge of Node
-            and Express.
+            Like everyone who discovered a new skill in 2020, i decided to
+            invest more time into software development. I have basic knowledge
+            of Node and Express.
           </Text>
           <Text mt={4}>
             When I'm not immersed in code, you can find me exploring new recipes
             in the kitchen, getting lost in a good novel, jotting down my latest
             creative ideas in a short story or playing video games.
           </Text>
-          <Text mt={4}>
-            One of my favorite things about being a developer is the constant
-            learning and growth that comes with the job. There's always
-            something new to discover, whether it's a new library, a new
-            programming language, or a new way of thinking about
-            problem-solving.
-          </Text>
-          <Text mt={4}>
-            I'm excited about the possibilities that technology brings, and I'm
-            dedicated to using my skills as a developer to make a positive
-            impact in the world.
-          </Text>
+          <Box>
+            <Collapse in={loadMore}>
+              <Text mt={4}>
+                One of my favorite things about being a developer is the
+                constant learning and growth that comes with the job. There's
+                always something new to discover, whether it's a new library, a
+                new programming language, or a new way of thinking about
+                problem-solving.
+              </Text>
+              <Text mt={4}>
+                I'm excited about the possibilities that technology brings, and
+                I'm dedicated to using my skills as a developer to make a
+                positive impact in the world.
+              </Text>
+            </Collapse>
+          </Box>
+          <Box mt={5}>
+            <Button
+              width="80%"
+              maxW="110px"
+              m="0 auto"
+              display="flex"
+              onClick={handleLoadMore}
+              alignItems={"center"}
+              justifyContent={"center"}
+            >
+              Show {loadMore ? "Less" : "More"}
+            </Button>
+          </Box>
         </Box>
       </Flex>
     </>

@@ -27,7 +27,7 @@ const ProjectCmp = () => {
             <Text>
               Please visit{" "}
               <a
-                href="https://docs.google.com/document/d/15KUENCaIGUR141eXsyb4E51LlXftiqR5Jsusfo2F8Mc/edit#heading=h.ymi089liagec"
+                href="https://docs.google.com/document/d/13UyLPc4XRTkOohSDx50r4mmQLjsX6NU57DsasmnEjlg/edit?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >

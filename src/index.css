@@ -7,3 +7,22 @@ body {
   height: 100%;
   overflow: auto;
 }
+
+.nav-button::before {
+  margin-left: auto;
+}
+
+.nav-button::after,
+.nav-button::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(86, 86, 210);
+  display: block;
+  transition: 0.5s;
+}
+
+.nav-button:hover::after,
+.nav-button:hover::before {
+  width: 100%;
+}

@@ -12,6 +12,7 @@ const PageLayout = () => {
         w="100%"
         display="flex"
         flexDir="column"
+        fontFamily={"Rubik"}
       >
         <SidebarContent />
       </Box>

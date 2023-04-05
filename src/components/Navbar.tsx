@@ -10,6 +10,7 @@ import {
   Link,
   useDisclosure,
   Stack,
+  Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
@@ -33,17 +34,18 @@ const Navbar = () => {
         />
         <HStack spacing={8} alignItems={"center"}>
           <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
-            <Box>
-              <Link href="/" _hover={{ textDecor: "none", fontWeight: 600 }}>
-                About me
+            <Box className="nav-button">
+              <Link href="/" _hover={{ textDecor: "none" }}>
+                <Text as={"span"} position={"relative"}>
+                  About me
+                </Text>
               </Link>
             </Box>
-            <Box>
-              <Link
-                href="/projects"
-                _hover={{ textDecor: "none", fontWeight: 600 }}
-              >
-                Projects
+            <Box className="nav-button">
+              <Link href="/projects" _hover={{ textDecor: "none" }}>
+                <Text as={"span"} position={"relative"}>
+                  Projects
+                </Text>
               </Link>
             </Box>
           </HStack>

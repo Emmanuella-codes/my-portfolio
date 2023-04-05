@@ -11,11 +11,25 @@ const ProjectCmp = () => {
         /* justifyContent="center" */
         alignItems={{ base: "center" }}
         maxW={{ base: "80vw" }}
-        
       >
         <Flex alignSelf="flex-start" mx={{ base: "3", md: "8" }}>
-          <Heading as="h2" size="xl">
-            Projects
+          <Heading as="h2" size="xl" fontFamily={"Kanit"} fontWeight={600}>
+            <Text
+              as={"span"}
+              position={"relative"}
+              _after={{
+                content: "''",
+                width: "full",
+                height: "30%",
+                position: "absolute",
+                bottom: 1,
+                left: 0,
+                bg: "blue.500",
+                zIndex: -1,
+              }}
+            >
+              Projects
+            </Text>
           </Heading>
         </Flex>
         <Box display="flex" flexDir="column" mt="20px" gap={7}>
@@ -23,7 +37,7 @@ const ProjectCmp = () => {
         </Box>
         <Flex flexDir="column" maxW={{ md: "80%" }}>
           <Skills />
-          <Box mt="9" mb="16" textAlign={"center"}>
+          <Box mt="9" mb="16" textAlign={"center"} fontFamily={"Rubik"}>
             <Text>
               Please visit{" "}
               <a

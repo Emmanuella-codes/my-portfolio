@@ -62,9 +62,24 @@ const skillsData = [
 const Skills = () => {
   return (
     <Flex flexDir={"column"}>
-      <Box mt="7" >
-        <Heading as="h2" size="xl">
-          Skills
+      <Box mt="7">
+        <Heading as="h2" size="xl" fontFamily={"Kanit"} fontWeight={600}>
+          <Text
+            as={"span"}
+            position={"relative"}
+            _after={{
+              content: "''",
+              width: "full",
+              height: "30%",
+              position: "absolute",
+              bottom: 1,
+              left: 0,
+              bg: "blue.500",
+              zIndex: -1,
+            }}
+          >
+            Skills
+          </Text>
         </Heading>
       </Box>
       <Box
@@ -74,6 +89,7 @@ const Skills = () => {
         gap="6"
         mt="4"
         fontSize={{ base: "sm" }}
+        fontFamily={"Rubik"}
       >
         {skillsData.map((skill, index) => (
           <Box key={index} display="flex" flexDir="column" alignItems="center">

@@ -9,6 +9,7 @@ const Footer = () => {
       border={{ base: "1px dashed #3c6e71", md: "none" }}
       p={{ base: "4", md: "3" }}
       borderRadius={"lg"}
+      fontFamily={"Rubik"}
       /* data-aos="slide-up" */
     >
       <Text fontSize="lg" textAlign={"center"}>

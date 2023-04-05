@@ -21,11 +21,26 @@ const AboutMe = () => {
           m="auto"
           w="83%"
         >
-          <Heading as="h2" size="xl">
-            About me
+          <Heading as="h2" size="xl" fontFamily={"Kanit"} fontWeight={600}>
+            <Text
+              as={"span"}
+              position={"relative"}
+              _after={{
+                content: "''",
+                width: "full",
+                height: "30%",
+                position: "absolute",
+                bottom: 1,
+                left: 0,
+                bg: "blue.500",
+                zIndex: -1,
+              }}
+            >
+              About me
+            </Text>
           </Heading>
         </Flex>
-        <Box w="83%" mt="20px">
+        <Box w="83%" mt="20px" fontFamily={"Rubik"}>
           <Text>
             Hello! I'm a Frontend Developer and I love to build web
             applications.

@@ -46,9 +46,20 @@ const ProjectCard = ({ project }: { project: Project }) => {
         gap={7}
         border="1px solid #3c6e71"
         p={3}
+        fontFamily={"Rubik"}
       >
         <Box>
-          <Link href={project.githubLink}>{project.title}</Link>
+          <Link href={project.githubLink}>
+            <span
+              style={{
+                borderBottom: "1px solid #3c6e71",
+                paddingInlineStart: "2px",
+                paddingInlineEnd: "2px",
+              }}
+            >
+              {project.title}
+            </span>{" "}
+          </Link>
         </Box>
         <Flex flexDir={{ base: "column", md: "row" }} gap={5}>
           <Box w={{ md: "50%" }}>

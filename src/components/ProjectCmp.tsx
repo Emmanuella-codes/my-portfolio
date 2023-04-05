@@ -30,6 +30,7 @@ const ProjectCmp = () => {
             >
               Projects
             </Text>
+
           </Heading>
         </Flex>
         <Box display="flex" flexDir="column" mt="20px" gap={7}>

@@ -3,6 +3,7 @@ import BreakfastPic from "../assets/Screenshots/breakfast-pic.png";
 import ManagePic from "../assets/Screenshots/manage-pic.png";
 import PortfolioPic from "../assets/Screenshots/portfolio-pic.png";
 import PlannerPic from "../assets/Screenshots/planner-pic.png";
+import "./styles/index.css";
 
 type Project = {
   title: string;
@@ -61,10 +62,13 @@ const ProjectCard = ({ project }: { project: Project }) => {
         fontFamily={"Rubik"}
       >
         <Box>
-          <Link href={project.githubLink}>
+          <Link
+            href={project.githubLink}
+            style={{ textDecoration: "none" }}
+            className="github-btn"
+          >
             <span
               style={{
-                borderBottom: "1px solid #3c6e71",
                 paddingInlineStart: "2px",
                 paddingInlineEnd: "2px",
               }}
@@ -74,7 +78,12 @@ const ProjectCard = ({ project }: { project: Project }) => {
           </Link>
           {project.websiteLink ? (
             <Box>
-              <Link href={project.websiteLink} fontSize={"md"}>
+              <Link
+                href={project.websiteLink}
+                fontSize={"md"}
+                className="website-btn"
+                style={{ textDecoration: "none" }}
+              >
                 Website Link
               </Link>
             </Box>

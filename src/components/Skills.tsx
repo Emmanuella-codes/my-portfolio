@@ -43,7 +43,7 @@ const skillsData = [
   },
   {
     icon: SiTailwindcss,
-    name: "Tailwind",
+    name: "Tailwind CSS",
   },
   {
     icon: SiBootstrap,

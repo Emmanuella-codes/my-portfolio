@@ -46,7 +46,6 @@
 .github-btn {
   font-size: 18px;
   font-family: inherit;
-  font-weight: 800;
   cursor: pointer;
   position: relative;
   border: none;
@@ -56,7 +55,6 @@
   transition-duration: 400ms;
   transition-property: color;
 }
-
 
 .github-btn:focus:after,
 .github-btn:hover:after {

@@ -64,17 +64,18 @@ const Navbar = () => {
       {isOpen ? (
         <Box pb={4} display={{ md: "none" }}>
           <Stack as={"nav"} spacing={4}>
-            <Box>
-              <Link href="/" _hover={{ textDecor: "none", fontWeight: 600 }}>
-                About me
+            <Box className="nav-button">
+              <Link href="/" _hover={{ textDecor: "none" }}>
+                <Text as={"span"} position={"relative"}>
+                  About me
+                </Text>
               </Link>
             </Box>
-            <Box>
-              <Link
-                href="/projects"
-                _hover={{ textDecor: "none", fontWeight: 600 }}
-              >
-                Projects
+            <Box className="nav-button">
+              <Link href="/projects" _hover={{ textDecor: "none" }}>
+                <Text as={"span"} position={"relative"}>
+                  Projects
+                </Text>
               </Link>
             </Box>
           </Stack>

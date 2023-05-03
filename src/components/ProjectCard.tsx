@@ -2,6 +2,7 @@ import { Box, Container, Flex, Image, Link, Text } from "@chakra-ui/react";
 import BreakfastPic from "../assets/Screenshots/breakfast-pic.png";
 import ManagePic from "../assets/Screenshots/manage-pic.png";
 import PortfolioPic from "../assets/Screenshots/portfolio-pic.png";
+import PlannerPic from "../assets/Screenshots/planner-pic.png";
 
 type Project = {
   title: string;
@@ -9,14 +10,24 @@ type Project = {
   technologies: string[];
   githubLink: string;
   cardPicture: string;
+  websiteLink?: string;
 };
 
 const projects: Project[] = [
   {
+    title: "Planner App",
+    description:
+      "A Todo/planner app, built with React, Redux and Redux-persist used to perform CRUD operations.",
+    technologies: ["TS", "REACT", "REDUX", "CHAKRA UI", "CSS"],
+    githubLink: "https://github.com/Emmanuella-codes/planner-app",
+    cardPicture: PlannerPic,
+    websiteLink: "https://online-planner.netlify.app/",
+  },
+  {
     title: "Breakfast Idea App",
     description:
       "A breakfast idea app that can be used to search recipes. Users can sign in to generate random recipes, save and delete them.",
-    technologies: ["NEXTJS", "CHAKRA UI", "FIREBASE"],
+    technologies: ["TS", "NEXTJS", "CHAKRA UI", "FIREBASE"],
     githubLink: "https://github.com/Emmanuella-codes/breakfast-idea-app",
     cardPicture: BreakfastPic,
   },
@@ -31,9 +42,10 @@ const projects: Project[] = [
   {
     title: "Portfolio Website",
     description: "My Portfolio website, built with React and Chakra-UI.",
-    technologies: ["REACT", "CHAKRA-UI"],
+    technologies: ["TS", "REACT", "CHAKRA-UI"],
     githubLink: "https://github.com/Emmanuella-codes/my-portfolio",
     cardPicture: PortfolioPic,
+    websiteLink: "https://ellachukwu-portfolio.netlify.app/",
   },
 ];
 
@@ -60,6 +72,15 @@ const ProjectCard = ({ project }: { project: Project }) => {
               {project.title}
             </span>{" "}
           </Link>
+          {project.websiteLink ? (
+            <Box>
+              <Link href={project.websiteLink} fontSize={"md"}>
+                Website Link
+              </Link>
+            </Box>
+          ) : (
+            <Box display="none"></Box>
+          )}
         </Box>
         <Flex flexDir={{ base: "column", md: "row" }} gap={5}>
           <Box w={{ md: "50%" }}>
@@ -74,8 +95,11 @@ const ProjectCard = ({ project }: { project: Project }) => {
                   border="1px solid #3c6e71"
                   p="2"
                   flexWrap="wrap"
+                  display={"flex"}
+                  flexDirection={"column"}
+                  justifyContent="center"
                 >
-                  <Text fontSize={{ base: "sm", md: "lg" }}>{tech}</Text>
+                  <Text fontSize={"12px"}>{tech}</Text>
                 </Box>
               ))}
             </Flex>

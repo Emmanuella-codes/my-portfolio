@@ -1,5 +1,5 @@
 import { Flex } from "@chakra-ui/react";
-import Articles from "../components/Articles";
+import ArticlesCmp from "../components/ArticlesCmp";
 import AboutMe from "../components/AboutMe";
 
 const index = () => {
@@ -13,7 +13,7 @@ const index = () => {
         mt={{ base: "30px" }}
       >
         <AboutMe />
-        <Articles />
+        <ArticlesCmp />
       </Flex>
     </>
   );

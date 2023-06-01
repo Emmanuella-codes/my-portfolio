@@ -27,7 +27,7 @@ const projects: Project[] = [
   {
     title: "Quote Generator",
     description:
-      "A fun/basic quote generator built with HTML, CSS and Typescript",
+      "A fun/basic quote generator built with HTML, CSS and Typescript.",
     technologies: ["STACKBLITZ", "HTML5", "CSS3", "TYPESCRIPT"],
     githubLink: "https://github.com/Emmanuella-codes/quote-generator",
     cardPicture: QuotePic,

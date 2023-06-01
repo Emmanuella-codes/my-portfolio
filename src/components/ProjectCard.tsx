@@ -1,8 +1,17 @@
-import { Box, Container, Flex, Image, Link, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Image,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 import BreakfastPic from "../assets/Screenshots/breakfast-pic.png";
 import ManagePic from "../assets/Screenshots/manage-pic.png";
 import PortfolioPic from "../assets/Screenshots/portfolio-pic.png";
 import PlannerPic from "../assets/Screenshots/planner-pic.png";
+import QuotePic from "../assets/Screenshots/quote-pic.png";
 import "./styles/index.css";
 
 type Project = {
@@ -15,6 +24,15 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    title: "Quote Generator",
+    description:
+      "A fun/basic quote generator built with HTML, CSS and Typescript.",
+    technologies: ["STACKBLITZ", "HTML5", "CSS3", "TYPESCRIPT"],
+    githubLink: "https://github.com/Emmanuella-codes/quote-generator",
+    cardPicture: QuotePic,
+    websiteLink: "https://typescript-screev.stackblitz.io/",
+  },
   {
     title: "Planner App",
     description:
@@ -31,6 +49,7 @@ const projects: Project[] = [
     technologies: ["TS", "NEXTJS", "CHAKRA UI", "FIREBASE"],
     githubLink: "https://github.com/Emmanuella-codes/breakfast-idea-app",
     cardPicture: BreakfastPic,
+    websiteLink: "https://breakfast-app.netlify.app/",
   },
   {
     title: "Manage Landing Page",
@@ -62,11 +81,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         fontFamily={"Rubik"}
       >
         <Box>
-          <Link
-            href={project.githubLink}
-            style={{ textDecoration: "none" }}
-            className="github-btn"
-          >
+          <Heading w={{ base: "67%", md: "42%" }} className="github-btn">
             <span
               style={{
                 paddingInlineStart: "2px",
@@ -75,20 +90,43 @@ const ProjectCard = ({ project }: { project: Project }) => {
             >
               {project.title}
             </span>{" "}
-          </Link>
+          </Heading>
           {project.websiteLink ? (
+            <Flex gap="5">
+              <Box>
+                <Link
+                  href={project.githubLink}
+                  target="_blank"
+                  fontSize={"md"}
+                  className="website-btn"
+                  style={{ textDecoration: "none" }}
+                >
+                  Github Link
+                </Link>
+              </Box>
+              <Box>
+                <Link
+                  href={project.websiteLink}
+                  target="_blank"
+                  fontSize={"md"}
+                  className="website-btn"
+                  style={{ textDecoration: "none" }}
+                >
+                  Website Link
+                </Link>
+              </Box>
+            </Flex>
+          ) : (
             <Box>
               <Link
-                href={project.websiteLink}
+                href={project.githubLink}
                 fontSize={"md"}
                 className="website-btn"
                 style={{ textDecoration: "none" }}
               >
-                Website Link
+                Github Link
               </Link>
             </Box>
-          ) : (
-            <Box display="none"></Box>
           )}
         </Box>
         <Flex flexDir={{ base: "column", md: "row" }} gap={5}>

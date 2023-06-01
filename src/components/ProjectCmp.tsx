@@ -12,7 +12,7 @@ const ProjectCmp = () => {
         alignItems={{ base: "center" }}
         maxW={{ base: "80vw" }}
       >
-        <Flex alignSelf="flex-start" mx={{ base: "3", md: "8" }}>
+        <Flex alignSelf="flex-start" mx={{ base: "3", md: "10%" }}>
           <Heading as="h2" size="xl" fontFamily={"Kanit"} fontWeight={600}>
             <Text
               as={"span"}
@@ -30,7 +30,6 @@ const ProjectCmp = () => {
             >
               Projects
             </Text>
-
           </Heading>
         </Flex>
         <Box display="flex" flexDir="column" mt="20px" gap={7}>

@@ -36,7 +36,7 @@ export const App = () => (
           mb="22px"
         >
           <Navbar />
-          <ColorModeSwitcher pr="65px" />
+          <ColorModeSwitcher pr="65px" mt={1} />
         </Box>
         {/* web & mobile design layout */}
         <Flex>

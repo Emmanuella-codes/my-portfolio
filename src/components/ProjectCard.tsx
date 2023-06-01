@@ -11,6 +11,7 @@ import BreakfastPic from "../assets/Screenshots/breakfast-pic.png";
 import ManagePic from "../assets/Screenshots/manage-pic.png";
 import PortfolioPic from "../assets/Screenshots/portfolio-pic.png";
 import PlannerPic from "../assets/Screenshots/planner-pic.png";
+import QuotePic from "../assets/Screenshots/quote-pic.png";
 import "./styles/index.css";
 
 type Project = {
@@ -29,7 +30,7 @@ const projects: Project[] = [
       "A fun/basic quote generator built with HTML, CSS and Typescript",
     technologies: ["STACKBLITZ", "HTML5", "CSS3", "TYPESCRIPT"],
     githubLink: "https://github.com/Emmanuella-codes/quote-generator",
-    cardPicture: BreakfastPic,
+    cardPicture: QuotePic,
     websiteLink: "https://typescript-screev.stackblitz.io/",
   },
   {
@@ -80,7 +81,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         fontFamily={"Rubik"}
       >
         <Box>
-          <Heading w={{ base: "67%", md: "35%" }} className="github-btn">
+          <Heading w={{ base: "67%", md: "42%" }} className="github-btn">
             <span
               style={{
                 paddingInlineStart: "2px",
@@ -95,6 +96,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
               <Box>
                 <Link
                   href={project.githubLink}
+                  target="_blank"
                   fontSize={"md"}
                   className="website-btn"
                   style={{ textDecoration: "none" }}
@@ -105,6 +107,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
               <Box>
                 <Link
                   href={project.websiteLink}
+                  target="_blank"
                   fontSize={"md"}
                   className="website-btn"
                   style={{ textDecoration: "none" }}

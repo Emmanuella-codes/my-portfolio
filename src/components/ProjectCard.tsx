@@ -81,7 +81,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         fontFamily={"Rubik"}
       >
         <Box>
-          <Heading w={{ base: "67%", md: "42%" }} className="github-btn">
+          <Heading w={"fit-content"} className="github-btn">
             <span
               style={{
                 paddingInlineStart: "2px",

@@ -13,6 +13,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+/* import { useLocation } from "react-router-dom"; */
 
 /* interface INavbar {
   pageTitle?: string;
@@ -21,6 +22,8 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 } */
 
 const Navbar = () => {
+  /* const location = useLocation(); */
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box px={4}>

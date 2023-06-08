@@ -12,6 +12,7 @@ import ManagePic from "../assets/Screenshots/manage-pic.png";
 import PortfolioPic from "../assets/Screenshots/portfolio-pic.png";
 import PlannerPic from "../assets/Screenshots/planner-pic.png";
 import QuotePic from "../assets/Screenshots/quote-pic.png";
+import AgeCalcPic from "../assets/Screenshots/age-calc-pic.png";
 import "./styles/index.css";
 
 type Project = {
@@ -50,6 +51,15 @@ const projects: Project[] = [
     githubLink: "https://github.com/Emmanuella-codes/breakfast-idea-app",
     cardPicture: BreakfastPic,
     websiteLink: "https://breakfast-app.netlify.app/",
+  },
+  {
+    title: "Age Calculator",
+    description:
+      "A Frontend Mentor challange, built with Vue and Tailwind CSS used to calculate the user's age in years, months and days.",
+    technologies: ["VUEJS", "TAILWIND CSS"],
+    githubLink: "https://github.com/Emmanuella-codes/Age-Calculator-App",
+    websiteLink: "https://fe-age-calc.netlify.app/",
+    cardPicture: AgeCalcPic,
   },
   {
     title: "Manage Landing Page",

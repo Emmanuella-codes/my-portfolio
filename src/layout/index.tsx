@@ -1,5 +1,4 @@
 import { Box, Flex, Text, Image } from "@chakra-ui/react";
-// import { useLocation } from "react-router-dom";
 import AvatarImg from "../assets/Avatar.svg";
 
 const PageLayout = () => {

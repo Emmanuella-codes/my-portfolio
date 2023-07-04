@@ -13,6 +13,7 @@ import PortfolioPic from "../assets/Screenshots/portfolio-pic.png";
 import PlannerPic from "../assets/Screenshots/planner-pic.png";
 import QuotePic from "../assets/Screenshots/quote-pic.png";
 import AgeCalcPic from "../assets/Screenshots/age-calc-pic.png";
+import LotusPic from "../assets/Screenshots/lotus-bliss-pic.png";
 import "./styles/index.css";
 
 type Project = {
@@ -25,6 +26,15 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    title: "Lotus Bliss Landing Page",
+    description:
+      "A basic landing page designed and built by me using Canva and Vue.js.",
+    technologies: ["VUEJS", "TAILWIND CSS", "VUE SPLIDE", "AOS"],
+    githubLink: "https://github.com/Emmanuella-codes/lotus-bliss-landing-page",
+    cardPicture: LotusPic,
+    websiteLink: "https://lotus-bliss.vercel.app/",
+  },
   {
     title: "Quote Generator",
     description:
@@ -153,6 +163,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                   p="2"
                   flexWrap="wrap"
                   display={"flex"}
+                  alignItems="center"
                   flexDirection={"column"}
                   justifyContent="center"
                 >

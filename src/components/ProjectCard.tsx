@@ -34,7 +34,7 @@ const projects: Project[] = [
     technologies: ["VUEJS", "TAILWIND CSS", "AXIOS"],
     githubLink: "https://github.com/Emmanuella-codes/dictionary-app",
     cardPicture: DictionaryPic,
-    // websiteLink: "https://lotus-bliss.vercel.app/",
+    websiteLink: "https://dictionary-app-fem.vercel.app/",
   },
   {
     title: "Lotus Bliss Landing Page",

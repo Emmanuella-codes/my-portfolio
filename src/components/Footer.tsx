@@ -20,15 +20,12 @@ const Footer = () => {
           <Icon as={AiOutlineTwitter} boxSize={5} />
         </Link>
         <Link
-          href="https://www.linkedin.com/in/emmanuella-chukwu-a05b54204/"
+          href="https://www.linkedin.com/in/emmanuella-chukwu-frontend-developer/"
           isExternal
         >
           <Icon as={FaLinkedinIn} boxSize={5} />
         </Link>
-        <Link
-          href="https://www.linkedin.com/in/emmanuella-chukwu-a05b54204/"
-          isExternal
-        >
+        <Link href="https://github.com/Emmanuella-codes" isExternal>
           <Icon as={RiGithubFill} boxSize={5} />
         </Link>
       </Flex>

@@ -15,6 +15,7 @@ import QuotePic from "../assets/Screenshots/quote-pic.png";
 import AgeCalcPic from "../assets/Screenshots/age-calc-pic.png";
 import LotusPic from "../assets/Screenshots/lotus-bliss-pic.png";
 import DictionaryPic from "../assets/Screenshots/dictionary-app-pic.png";
+import MoniepointPic from "../assets/Screenshots/moniepoint-pic.png";
 import "./styles/index.css";
 
 type Project = {
@@ -27,6 +28,16 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    title: "Darcy's Insurance",
+    description:
+      "Moniepoint Frontend Translation Test, a landing page recreation of a Dribbble design.",
+    technologies: ["REACT", "TAILWIND CSS"],
+    githubLink:
+      "https://github.com/Emmanuella-codes/moniepoint-frontend-translation-test",
+    cardPicture: MoniepointPic,
+    websiteLink: "https://moniepoint-ftt.netlify.app/",
+  },
   {
     title: "Dictionary App",
     description:

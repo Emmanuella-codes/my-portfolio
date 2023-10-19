@@ -31,7 +31,7 @@ const projects: Project[] = [
   {
     title: "Darcy's Insurance",
     description:
-      "Moniepoint Frontend Translation Test, a landing page recreation of a Dribbble design.",
+      "Frontend Translation Test, a landing page recreation of a Dribbble design.",
     technologies: ["REACT", "TAILWIND CSS"],
     githubLink:
       "https://github.com/Emmanuella-codes/moniepoint-frontend-translation-test",
